@@ -1,0 +1,28 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+		"Plugin Debugger"
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"AutoPEP8",
+		"BracketHighlighter",
+		"BufferScroll",
+		"ConvertToUTF8",
+		"CTags",
+		"DocBlockr",
+		"DocBlockr_Python",
+		"Git",
+		"Markdown Preview",
+		"Package Control",
+		"Plugin Debugger",
+		"SFTP",
+		"SublimeLinter-pylint",
+		"SublimeREPL",
+		"SublimeTmpl",
+		"Theme - itg.flat",
+		"Theme - Soda"
+	]
+}

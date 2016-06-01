@@ -1,0 +1,103 @@
+[
+    {
+        "id": "tools",
+        "children":
+        [{
+            "caption": "SublimeREPL",
+            "mnemonic": "R",
+            "id": "SublimeREPL",
+            "children":
+            [
+                {"caption": "Eval in REPL",
+                 "children":
+                    [
+                        {"caption": "Selection", "command": "repl_transfer_current", "args": {"scope": "selection"}},
+                        {"caption": "File", "command": "repl_transfer_current", "args": {"scope": "file"}},
+                        {"caption": "Lines", "command": "repl_transfer_current", "args": {"scope": "lines"}},
+                        {"caption": "Block", "command": "repl_transfer_current", "args": {"scope": "block"}}
+                ]},
+                {"caption": "Transfer to REPL",
+                 "children":
+                    [
+                        {"caption": "Selection", "command": "repl_transfer_current", "args": {"scope": "selection", "action":"view_write"}},
+                        {"caption": "File", "command": "repl_transfer_current", "args": {"scope": "file", "action":"view_write"}},
+                        {"caption": "Lines", "command": "repl_transfer_current", "args": {"scope": "lines", "action":"view_write"}},
+                        {"caption": "Block", "command": "repl_transfer_current", "args": {"scope": "block", "action":"view_write"}}
+                    ]
+                },
+                { "caption": "-" },
+                {"caption": "Python",
+                "id":"Python",
+                "children":[
+                    {"command": "repl_open",
+                     "caption": "Python3",
+                     "id": "repl_python3",
+                     "mnemonic": "p",
+                     "args": {
+                        "type": "subprocess",
+                        "encoding": "utf8",
+                        "cmd": ["G:\\Program Files (x86)\\Python35-32\\python.exe", "-i", "-u"],
+                        "cwd": "$file_path",
+                        "external_id": "python",
+                        "extend_env": {"PYTHONIOENCODING": "utf-8"},
+                        "syntax": "Packages/Python/Python.tmLanguage",
+                        }
+                    },
+                    {"command": "repl_open",
+                     "caption": "Python2",
+                     "id": "repl_python2",
+                     "mnemonic": "p",
+                     "args": {
+                        "type": "subprocess",
+                        "encoding": "utf8",
+                        "cmd": ["G:\\Program Files (x86)\\Python27\\python.exe", "-i", "-u"],
+                        "cwd": "$file_path",
+                        "external_id": "python",
+                        "extend_env": {"PYTHONIOENCODING": "utf-8"},
+                        "syntax": "Packages/Python/Python.tmLanguage",
+                        }
+                    },
+                ]
+                }
+            ]
+        }]
+    },
+
+    {
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "SublimeREPL",
+                        "children":
+                        [
+                            {
+                                "command": "open_file", "args":
+                                {
+                                    "file": "${packages}/SublimeREPL/SublimeREPL.sublime-settings"
+                                },
+                                "caption": "Settings – Default"
+                            },
+                            {
+                                "command": "open_file", "args":
+                                {
+                                    "file": "${packages}/User/SublimeREPL.sublime-settings"
+                                },
+                                "caption": "Settings – User"
+                            },
+                            { "caption": "-" }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
